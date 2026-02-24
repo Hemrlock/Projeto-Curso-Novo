@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes - Catálogo de Filmes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-conteudo">
+        <h1 class="logo">🎬 Lista de Filmes</h1>
+
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="filmes.html">Filmes</a>
+            <a href="#">Séries</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- MESMA estrutura de pesquisa do index, mas agora na página de filmes -->
+    <section class="Pesquisa-section">
+        <div class="container Pesquisa-conteudo">
+            <input
+                type="text"
+                id="campoPesquisa"
+                placeholder="Pesquisar filme..."
+            >
+            <button id="botaoPesquisa" class="Pesquisa-button">
+                💎
+            </button>
+        </div>
+    </section>
+
+    <!-- Seção de filmes IGUAL ao index -->
+    <section class="exibiFilme-section">
+        <h2 class="titulo-secao">Filmes</h2>
+        <div id="filmesGrid"></div>
+    </section>
+</main>
+
+<script src="./JS/filmes.js"></script> <!-- Novo arquivo JS -->
+
+<footer>
+    <p>Dados fornecidos por The Movie Database (TMDB)</p>
+</footer>
+
+</body>
+</html>
