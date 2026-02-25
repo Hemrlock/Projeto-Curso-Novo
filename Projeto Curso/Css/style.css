@@ -179,3 +179,30 @@ body {
     border-radius: 15px;
     align-self: flex-start;
 }
+.filme-card {
+  cursor: pointer;
+}
+
+.filme-card:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+}
+/* 🔓 GARANTE QUE O CARD RECEBA CLIQUE */
+.filme-card {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* 🔓 GARANTE QUE OS FILHOS NÃO BLOQUEIEM */
+.filme-card * {
+  pointer-events: none;
+}
+.menu a {
+  cursor: pointer;
+}
+
+.menu a:hover {
+  color: #f5c518;
+}

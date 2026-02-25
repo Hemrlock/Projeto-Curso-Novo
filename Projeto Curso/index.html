@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Catálogo de Filmes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/style.css">
 </head>
+
 <body>
 
 
-<header class="header">
-    <div class="container header-conteudo">
-        <h1 class="logo">🎬 Lista de Filmes</h1>
+    <header class="header">
+        <div class="container header-conteudo">
+            <h1 class="logo">🎬 Lista de Filmes</h1>
 
-        <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="filmes.html">Filmes</a>
-            <a href="#">Séries</a>
-        </nav>
-    </div>
-</header>
-
-<main>
-
-    <section class="Pesquisa-section">
-        <div class="container Pesquisa-conteudo">
-            <input
-                type="text"
-                id="campoPesquisa"
-                placeholder="Pesquisar filme..."
-            >
-            <button id="botaoPesquisa" class="Pesquisa-button">
-                💎
-            </button>
+            <nav class="menu">
+                <a href="#" id="menu-trending">🔥 Tendências</a>
+                <a href="#" id="menu-movies">🎬 Filmes</a>
+                <a href="#" id="menu-series">📺 Séries</a>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <section class="exibiFilme-section">
-        <h2 class="titulo-secao">Em destaque</h2>
+    <main>
 
-        <div id="filmesGrid"></div>
-    </section>
+        <section class="Pesquisa-section">
+            <div class="container Pesquisa-conteudo">
+                <input type="text" id="campoPesquisa" placeholder="Pesquisar filme...">
+                <button id="botaoPesquisa" class="Pesquisa-button">
+                    💎
+                </button>
+            </div>
+        </section>
 
-</main>
-<script src="./JS/main.js"></script>
+        <section class="exibiFilme-section">
+            <h2 class="titulo-secao" id="tituloSecao">Em destaque</h2>
+            <div id="filmesGrid"></div>
+        </section>
 
-<footer>
-  <p>Dados fornecidos por The Movie Database (TMDB)</p>
-</footer>
+    </main>
+    <script src="./JS/filmes.js" defer></script>
+
+    <footer>
+        <p>Dados fornecidos por The Movie Database (TMDB)</p>
+    </footer>
 
 </body>
+
 </html>
